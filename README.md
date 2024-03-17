@@ -144,6 +144,11 @@ To sign a PDF document, it is possible to use the script `pdfsign.php`:
 $ php pdfsign.php examples/testdoc.pdf caralla.p12 > testdoc-signed.pdf
 ```
 
+OpenSSL 3 usage (https://github.com/php/php-src/issues/12369)  
+```bash
+$ OPENSSL_CONF=openssl.conf php pdfsign.php examples/testdoc.pdf caralla.p12 > testdoc-signed.pdf
+```
+
 And now the document is signed. And if you wanted to add a second signature, it is as easy as signing the resulting document again:
 
 ```bash

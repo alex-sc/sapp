@@ -1,2 +1,6 @@
 /composer.lock
 /vendor
+
+.idea
+composer.phar
+signed.pdf
